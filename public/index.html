@@ -18,22 +18,19 @@
 <body>
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
-
-
-  <script src="https://unpkg.com/@pusher/push-notifications-web@latest/dist/push-notifications-cdn.js"></script>
   <script>
-    PusherPushNotifications.init({
-      instanceId: '906db85a-7c53-4e33-9c67-806734039e98',
-    })
-      .then(beamsClient =>
-        beamsClient
-          .start()
-          .then(() => beamsClient.addDeviceInterest('hello'))
-          .then(() => console.log('Successfully registered and subscribed! Device ID:', beamsClient.deviceId)),
-      )
-      .catch(error => {
-        console.log('error', error)
-      });
+    // PusherPushNotifications.init({
+    //   instanceId: '906db85a-7c53-4e33-9c67-806734039e98',
+    // })
+    //   .then(beamsClient =>
+    //     beamsClient
+    //       .start()
+    //       .then(() => beamsClient.addDeviceInterest('hello'))
+    //       .then(() => console.log('Successfully registered and subscribed! Device ID:', beamsClient.deviceId)),
+    //   )
+    //   .catch(error => {
+    //     console.log('error', error)
+    //   });
   </script>
 
 
