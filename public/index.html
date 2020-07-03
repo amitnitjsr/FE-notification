@@ -20,19 +20,19 @@
   <div id="root"></div>
   <script>
 
-    PusherPushNotifications.init({
-      instanceId: '906db85a-7c53-4e33-9c67-806734039e98',
-      disableHostCheck: true
-    })
-      .then(beamsClient =>
-        beamsClient
-          .start()
-          .then(() => beamsClient.addDeviceInterest('hello'))
-          .then(() => console.log('Successfully registered and subscribed! Device ID:', beamsClient.deviceId)),
-      )
-      .catch(error => {
-        console.log('error', error)
-      });
+    // PusherPushNotifications.init({
+    //   instanceId: '906db85a-7c53-4e33-9c67-806734039e98',
+    //   disableHostCheck: true
+    // })
+    //   .then(beamsClient =>
+    //     beamsClient
+    //       .start()
+    //       .then(() => beamsClient.addDeviceInterest('hello'))
+    //       .then(() => console.log('Successfully registered and subscribed! Device ID:', beamsClient.deviceId)),
+    //   )
+    //   .catch(error => {
+    //     console.log('error', error)
+    //   });
 
   </script>
 </body>
